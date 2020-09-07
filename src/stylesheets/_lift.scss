@@ -1,0 +1,45 @@
+.app--lift {
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 50px auto;
+  place-items: center start;
+  border: 1px solid $light;
+  padding: $medium;
+  margin: $medium;
+  border-radius: $small;
+
+  &.light {
+    border: 1px solid $dark;
+  }
+
+  @include respond-to(medium) {
+    min-width: 500px;
+  }
+  @include respond-to(large) {
+    min-width: 600px;
+  }
+}
+
+.app--lift-stats {
+  display: flex;
+}
+
+.app--lift-item {
+  margin-right: $small;
+}
+
+.app--lift-reaction {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 90px auto;
+}
+
+.app--lift-reaction-button {
+  @include button;
+  width: 60%;
+}
+
+.app--lift-reaction-icon {
+  font-size: 20px;
+}

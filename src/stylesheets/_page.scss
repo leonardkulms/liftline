@@ -1,0 +1,40 @@
+.page {
+  grid-template: auto 1fr auto / auto 1fr auto;
+
+  &.dark {
+    background-color: $dark;
+    color: $light;
+  }
+
+  &.light {
+    background-color: $light;
+    color: $dark;
+  }
+}
+
+.page--navigation {
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &.dark {
+    background-color: $dark;
+  }
+
+  &.light {
+    background-color: $light;
+  }
+}
+
+.page--navigation-logo {
+  margin-right: 20px;
+}
+
+.page--footer {
+  padding: $big;
+  border-top: 1px solid $light;
+}

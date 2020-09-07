@@ -1,0 +1,16 @@
+@mixin button {
+  text-align: center;
+  border: 1px solid $rose;
+  border-radius: $small;
+  width: 70%;
+  background-color: transparent;
+
+  &.is-active {
+    background-color: $rose;
+  }
+}
+
+@mixin icon {
+  width: 10px;
+  height: 10px;
+}

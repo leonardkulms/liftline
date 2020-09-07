@@ -1,0 +1,16 @@
+.app--liftline-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app--liftline-avatar-image {
+    border-radius:8px;
+    border:1px solid $rose;
+    background-color: $rose;
+    width: $medium;
+    height: $medium;
+    margin-right: $small;
+}
+
+.app--liftline-avatar-name {}
