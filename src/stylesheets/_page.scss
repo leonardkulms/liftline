@@ -1,5 +1,4 @@
 .page {
-  grid-template: auto 1fr auto / auto 1fr auto;
 
   &.dark {
     background-color: $dark;
@@ -30,8 +29,19 @@
   }
 }
 
-.page--navigation-logo {
-  margin-right: 20px;
+.page--navigation-nav {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  
+  @include respond-to(medium) {
+    width: 500px;
+  }
+  @include respond-to(large) {
+    width: 600px;
+  }
 }
 
 .page--footer {
