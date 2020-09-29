@@ -1,0 +1,34 @@
+
+.modal--backdrop {
+	position: fixed;
+	z-index: 1;
+	overflow: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  background: rgba(0, 0, 0, .65);
+}
+
+.modal--container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  width: 400px;
+  height: 400px;
+	padding: $big;
+	border-radius: $small;
+	margin: 100px auto;
+  background: $white;
+}
+
+.modal--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal--title {
+	font-size: 18px;
+	font-weight: 600;
+}
