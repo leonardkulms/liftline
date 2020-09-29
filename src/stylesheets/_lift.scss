@@ -1,7 +1,7 @@
 .app--lift {
   min-width: 300px;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 170px auto;
   grid-template-rows: 50px auto;
   place-items: center start;
   border: 1px solid $light;
@@ -31,13 +31,15 @@
 
 .app--lift-reaction {
   width: 100%;
-  display: grid;
-  grid-template-columns: 90px auto;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .app--lift-reaction-button {
   @include button;
-  width: 60%;
+  width: 30%;
+  height: 100%;
 }
 
 .app--lift-reaction-icon {
