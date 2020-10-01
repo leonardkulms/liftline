@@ -20,7 +20,7 @@ function Modal (props) {
 
 	return (
 		<div className="modal--backdrop">
-			<div className="modal--container">
+			<div className={ 'modal--container ' + ((props.theme)? 'dark' : 'light') }>
         <div className="modal--header">
           <h3 className="modal--title">{props.heading}</h3>
 			  	<button type="button" className="app--newlift-button-close" onClick={props.onRequestClose}>X</button>
