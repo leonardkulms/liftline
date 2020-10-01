@@ -20,14 +20,17 @@ function Lift(props) {
     <li className= {'app--lift ' + ((props.theme)? 'dark' : 'light')}>
       <Avatar />
       <div className='app--lift-stats'>
-        <p>{ props.exercise },</p>
+        <p className='app--lift-item' >{ props.exercise}, </p>
         <p className='app--lift-item'>{ props.sets } X </p>
         <p className='app--lift-item'>{ props.reps } </p>
-        <p className='app--lift-item'>mit { props.weight }</p>
+        <p className='app--lift-item'>with { props.weight }</p>
       </div>
       <p><span aria-label='fire' role='img'>🔥</span>{ fireCount }</p>
       <div className='app--lift-reaction'>
-        <button onClick={ () => handleClick() } className= {'app--lift-reaction-button ' + ((likedByUser)? 'is-active':'')}>
+        <button onClick={ () => handleClick() } 
+        className= {'app--lift-reaction-button ' + 
+        ((props.theme)? 'dark ' : 'light ') + 
+        ((likedByUser)? 'is-active':'')}>
           <span className='app--lift-reaction-icon' aria-label='fire' role='img'>🔥</span>
         </button>
 
