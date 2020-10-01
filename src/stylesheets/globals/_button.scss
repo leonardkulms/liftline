@@ -1,15 +1,15 @@
 @mixin button {
   text-align: center;
-  border: 1px solid $rose;
   border-radius: $small;
   background-color: transparent;
+  border-style: none;
 
   &:hover {
-		transform: scale(1.1);
+		transform: scale(1.05);
   }
-
-  &.is-active {
-    background-color: $rose;
+ 
+  &:active {
+    outline: none;
   }
 }
 

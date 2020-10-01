@@ -3,7 +3,7 @@
   height: 100px;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto 100px;
   grid-gap: 10px;
 }
 
@@ -12,31 +12,13 @@
   place-items: center;
   height: 50px;
   width: 300px;
-}
 
-.app--newlift-form-group {
-  display: flex;
-  justify-content: space-between;
-}
+  &.dark {
+		background-color: $charcoal;
+	}
+	&.light {
+		background-color: $light;
+		color: $charcoal;
+	}
 
-.app--newlift-button {
-  @include button;
-  width: 100%;
-  height: 100%;
-  line-height: 26px;
-  font-size: 15px;
-  &.is-emoji {
-    font-size: 26px;
-  }
-}
-
-.app--newlift-button-close {
-  @include button;
-  padding: 5px 10px;
-  border: 0;
-  font-size: 26px;
-
-  &:hover{
-    background: rgba(0, 0, 0, .1);
-  }
 }

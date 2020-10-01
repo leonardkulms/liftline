@@ -13,13 +13,21 @@
 .modal--container {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: 100px auto;
   width: 400px;
   height: 400px;
 	padding: $big;
 	border-radius: $small;
 	margin: 100px auto;
-  background: $white;
+
+  &.dark {
+		background-color: $light-charcoal;
+	}
+
+	&.light {
+		background-color: $light;
+		color: $charcoal;
+	}
 }
 
 .modal--header {

@@ -4,13 +4,19 @@
   grid-template-columns: 170px auto;
   grid-template-rows: 50px auto;
   place-items: center start;
-  border: 1px solid $light;
+  background-color: $light-charcoal;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.04);
+  -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.04);
+  box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.04);
   padding: $medium;
   margin: $medium;
   border-radius: $small;
 
   &.light {
-    border: 1px solid $dark;
+    background-color: $lighter;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.04);
+    -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.04);
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.04);
   }
 
   @include respond-to(medium) {
@@ -40,6 +46,22 @@
   @include button;
   width: 30%;
   height: 100%;
+
+  &.dark {
+    border: 1px solid $maya;
+
+    &.is-active {
+      background-color: $maya;
+    }
+  }
+
+  &.light {
+    border: 1px solid $mint;
+
+    &.is-active {
+      background-color: $mint;
+    }
+  }
 }
 
 .app--lift-reaction-icon {

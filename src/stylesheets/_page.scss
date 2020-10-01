@@ -1,13 +1,13 @@
 .page {
 
   &.dark {
-    background-color: $dark;
+    background-color: $charcoal;
     color: $light;
   }
 
   &.light {
     background-color: $light;
-    color: $dark;
+    color: $charcoal;
   }
 }
 
@@ -21,7 +21,7 @@
   justify-content: space-around;
 
   &.dark {
-    background-color: $dark;
+    background-color: $charcoal;
   }
 
   &.light {
