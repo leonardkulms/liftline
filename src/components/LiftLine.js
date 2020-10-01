@@ -11,7 +11,7 @@ function LiftLine(props) {
 
   // use only on the first render
   useEffect( () => {
-    let exercises = ['Bench', 'Deadlift','Squat']
+    let exercises = ['Bench Press', 'Deadlifts','Squats']
     let random_item = (items) => items[Math.floor(Math.random()*items.length)]
   
     let fakeData = new Array(20).fill([{
