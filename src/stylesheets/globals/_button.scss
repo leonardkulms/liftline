@@ -3,6 +3,7 @@
   border-radius: $small;
   background-color: transparent;
   border-style: none;
+  -webkit-appearance: none;
 
   &:hover {
 		transform: scale(1.05);
