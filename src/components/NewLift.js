@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Modal from './Modal'
 import NewLiftForm from './NewLiftForm'
 
@@ -18,7 +18,8 @@ function NewLift(props) {
         onClick={toggleModal} 
         type="button" 
         className="app--newlift-button"
-        >➕
+        >
+          <span aria-label="Plus" role="img">➕</span>
       </button>}
     </div>
   );
