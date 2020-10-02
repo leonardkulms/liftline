@@ -1,5 +1,5 @@
 import React from 'react'
-const { useState, useEffect } = React;
+const { useEffect } = React;
 
 function Modal (props) {
 	useEffect(() => {
