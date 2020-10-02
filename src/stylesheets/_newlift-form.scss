@@ -49,6 +49,11 @@
   background-repeat: no-repeat;
 }
 
+.app--newlift-form-error {
+  font-size: 10px;
+  line-height: 10px;
+}
+
 .app--newlift-button {
   @include button;
   width: 100%;
