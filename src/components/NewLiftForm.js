@@ -43,7 +43,7 @@ function NewLiftForm(props) {
       </div>
 
       <div className="app--newlift-form-group">
-        <label className="app--newlift-form-label"  htmlFor="sets">Reps:</label>
+        <label className="app--newlift-form-label"  htmlFor="sets">Sets:</label>
         <input className="app--newlift-form-input" type="number" min="1" max="20" name="sets" ref={register({ required: true })} />
         {errors.sets && <span className="app--newlift-form-error">Please specify the number of sets of this lift</span>}
       </div>
