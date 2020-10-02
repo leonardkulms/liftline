@@ -30,7 +30,8 @@ function LiftLine(props) {
     <ul className="app--liftline">
       <NewLift theme = { props.theme } addLift = { addLift }/>
   
-      { lifts.map( lift => <Lift 
+      { lifts.map((lift, index) => <Lift 
+          key={ index }
           theme= { props.theme }
           sets={ lift.sets }
           reps={ lift.reps }
@@ -38,7 +39,6 @@ function LiftLine(props) {
           exercise={ lift.exercise }
           fireCount={lift.fireCount }
           likedByUser={ lift.likedByUser }/>) }
-
     </ul>
   )
 }

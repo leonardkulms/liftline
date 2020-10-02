@@ -7,7 +7,7 @@ function Checkbox(props) {
       <input className='checkbox'
         type='checkbox'
         checked={props.theme}
-        onClick={() => props.handleTheme()}
+        onChange={() => props.handleTheme()}
       />
       
       <span className='slider round'>
