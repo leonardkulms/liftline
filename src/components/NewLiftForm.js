@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 
 function NewLiftForm(props) {
 
-  const { register, handleSubmit, watch, errors } = useForm()
+  const { register, handleSubmit, errors } = useForm()
   const onSubmit = data => {
     props.addLift({
       sets: data.sets,
