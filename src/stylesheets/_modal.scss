@@ -13,7 +13,7 @@
 .modal--container {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 100px auto;
+  grid-template-rows: 70px auto;
   width: 400px;
   height: 400px;
 	padding: $big;
@@ -33,7 +33,8 @@
 .modal--header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+	align-items: center;
+	height: 50px;
 }
 
 .modal--title {
