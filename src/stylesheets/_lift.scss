@@ -1,9 +1,14 @@
 .app--lift {
-  min-width: 300px;
+  @include respond-to(large, medium) {
+    width: 400px
+  }
+
+  @include respond-to(small) {
+    width: 350px
+  }
   display: grid;
-  grid-template-columns: 170px auto;
+  grid-template-columns: 130px auto;
   grid-template-rows: 50px auto;
-  place-items: center start;
   background-color: $light-charcoal;
   -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.04);
   -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.04);
@@ -29,6 +34,7 @@
 
 .app--lift-stats {
   display: flex;
+  justify-content: flex-end;
 }
 
 .app--lift-item {
