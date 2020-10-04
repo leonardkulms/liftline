@@ -1,7 +1,5 @@
 A React app for powerlifters at gyms to log their lifts.
-This is just something startup people would call "MVP". 
-
-I decided to transfer this to a Next.js app and will open a new repo for that.
+Right now this is just something startup people would call "MVP". 
 
 A live demo of this prototype can be found at liftline-demo.herokuapp.com
 
